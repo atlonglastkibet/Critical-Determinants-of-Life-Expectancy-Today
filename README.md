@@ -1,16 +1,8 @@
 
-***************************************************************************
-STUDY TITLE: A Machine Learning Based Prediction Model for Life Expectancy.
-****************************************************************************
-Date: November 13, 2022.
-************************
+# STUDY TITLE: Critical Determinats of Life Expectancy Today - ML Approach
 
---------------------------------------------------------------
-## Title of Dataset: Life Expectancy Dataset.
---------------------------------------------------------------
-The data set was found on the Kaggle data repository.
+## Title of Dataset: Life Expectancy Dataset. Source :Kaggle
 
---------------------------------------
 ## Brief summary of dataset contents:
 --------------------------------------
 The data is on 193 UN member states from the year 2000-2015, with the Life Expectancy health related factors drawn from the Global Health 
@@ -106,4 +98,4 @@ The original dataset can be accessed through (https://www.kaggle.com/datasets/ku
 
 ------------------------------------------------------------------------------------------------------------
 # END OF README.
-------------------------------------------------------------------------------------------------------------
+
