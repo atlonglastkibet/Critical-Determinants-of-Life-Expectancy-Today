@@ -1,17 +1,76 @@
 
-# STUDY TITLE: Critical Determinats of Life Expectancy Today - ML Approach
+# Critical Determinants of Life Expectancy Today - ML Approach
 
-## Title of Dataset: Life Expectancy Dataset. Source :Kaggle
+## Project Overview
 
-## Brief summary of dataset contents:
---------------------------------------
-The data is on 193 UN member states from the year 2000-2015, with the Life Expectancy health related factors drawn from the Global Health 
-Observatory data repository. The UN data repository provided the corresponding socioeconomic related factors for the 193 Countries. The 
-individual data files were merged into a single data set with 2937 observations of 22 variables.
+This project aims to analyze the critical factors affecting life expectancy using a machine learning approach. By leveraging kaggle datasets, we perform exploratory data analysis (EDA), feature engineering, and model training to predict life expectancy based on socioeconomic, environmental, and healthcare-related factors.
+The original dataset can be accessed through [kaggle](https://www.kaggle.com/datasets/kumarajarshi/life-expectancy-who).
 
-# ---------------------------------------------
-## Description of the Data and file structure.
-# ---------------------------------------------
+## Project Structure
+
+The repository is organized as follows:
+
+- **data/**: Contains datasets used in the analysis.
+  - `data_imputed/`: Processed datasets with missing values handled.
+  - `data_original/`: Raw datasets.
+  - `EDA_for_data.csv`: Summary dataset used for exploratory data analysis.
+- **docs/**: Documentation and reports related to the project.
+  - `choropleth_animated/`: Animated visualizations of life expectancy trends.
+  - `choropleth_static/`: Static visualizations of life expectancy trends.
+- **models/**: Trained machine learning models and saved results.
+- **notebooks/**: Jupyter notebooks for different steps of the analysis.
+  - `01_data_processing.ipynb`: Data preprocessing and cleaning.
+  - `02_EDA.ipynb`: Exploratory Data Analysis.
+  - `03_feature_engineering.ipynb`: Feature selection and engineering.
+  - `04_model_training_and_eva.ipynb`: Model training and evaluation.
+  - `05_hyperparameter_tuning.ipynb`: Hyperparameter tuning for optimized performance.
+  - `appendix_nb.ipynb`: Additional analyses and findings.
+- **plots/**: Visualizations generated from the data.
+- **utils/**: Helper scripts for data processing and visualization.
+  - `kde_original_vs.py`: Kernel Density Estimation comparison.
+  - `kde_plt.py`: KDE plotting utilities.
+- **venv/**: Virtual environment containing required dependencies.
+- `.gitignore`: Specifies files and directories to be ignored by Git.
+- `README.md`: This document.
+
+## Installation
+
+To set up the project, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/atlonglastkibet/Critical-Determinants-of-Life-Expectancy-Today.git
+   ```
+2. Create and activate a virtual environment:
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate  # On macOS/Linux
+   venv\Scripts\activate  # On Windows
+   ```
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## Usage
+
+Run the Jupyter notebooks to explore the data and train models:
+
+```bash
+jupyter notebook
+```
+
+## Research Questions
+
+- Identify key factors that determine life expectancy today.
+- Develop predictive models to estimate life expectancy.
+- Provide actionable insights through visualizations and model interpretations.
+
+## Contributions
+
+Feel free to contribute by submitting issues or pull requests.
+
+## License
 
 The dataset has the following attributes:
 
@@ -76,26 +135,3 @@ The dataset has the following attributes:
     19.1, 19.3, etc.).
 
 22. Schooling - A numeric variable describing the number of years spent in school (the allowable values are: 10.1, 10.0, 9.9, 9.8, 9.5, 9.2, 8.9, 8.7, 8.4, 8.1, etc.).
-
-#-------------------------------------------------------------------------------------------------
-## Important Notes:
-#-------------------------------------------------------------------------------------------------
-1. The data (Life Expectancy (LE) dataset) was completely derived from Kaggle as a single dataset.
-2. This data set has been further cleaned for its appropriateness of use in the current study.
-3. Data for Niue, San Marino, Cook Islands, Marshall Islands, Monaco, Palau, Tuvalu and Dominica were missing for considerable number of years. Consequently, these 
-   countries were excluded from this study. The resultant dataset used in this study (attached with this readme file) had 2832 observations of 21 variables.
-4. This dataset, after the above enhancements has not been associated with any journal article currently in progress or published before.
-5. The empty cells in this dataset are filled with "NA". Since XGBoost (the model used in the study) is robust to missingness and can automatically detect and deal with 
-   missing values, manual transformation of the null values was redundant. As a preliminary step to feature selection however, the missing values were imputed using the 
-   PCA model via the imputePCA function of the missMDA package using the R statistical software version 4.2.0. 
-
-The dataset, found in Kaggle data repository was used in the study with the considerations highlighted under the "Important Notes" above. The LE dataset is publicly available 
-without any restrictions on use. Therefore, future users will be at liberty to distribute, remix, adapt and build upon the material in any medium or format with no conditions. 
-
-## Sharing/Access Information
-
-The original dataset can be accessed through (https://www.kaggle.com/datasets/kumarajarshi/life-expectancy-who) link.
-
-------------------------------------------------------------------------------------------------------------
-# END OF README.
-
