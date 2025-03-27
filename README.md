@@ -6,6 +6,7 @@
 This project aims to analyze the critical factors affecting life expectancy using a machine learning approach. By leveraging kaggle datasets, we perform exploratory data analysis (EDA), feature engineering, and model training to predict life expectancy based on socioeconomic, environmental, and healthcare-related factors.
 The original dataset can be accessed through [kaggle](https://www.kaggle.com/datasets/kumarajarshi/life-expectancy-who).
 
+A slide presentation of my findings is published on my [Canva](https://www.canva.com/design/DAGh1KcJELc/pFbKkxP7y8dMuXxj9kz7pA/edit)
 ## Project Structure
 
 The repository is organized as follows:
