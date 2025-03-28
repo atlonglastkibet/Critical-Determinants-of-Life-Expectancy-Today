@@ -3,7 +3,7 @@
 
 ## Project Overview
 
-This project aims to analyze the critical factors affecting life expectancy using a machine learning approach. By leveraging kaggle datasets, we perform exploratory data analysis (EDA), feature engineering, and model training to predict life expectancy based on socioeconomic, environmental, and healthcare-related factors. It is a submission for my ML I Capstone Project.
+This project aims to analyze the critical factors affecting life expectancy using a machine learning approach. By leveraging kaggle datasets, I perform exploratory data analysis (EDA), feature engineering, and model training to predict life expectancy based on socioeconomic, environmental, and healthcare-related factors. This is a submission for my ML I Capstone Project.
 
 ## Data source
 
